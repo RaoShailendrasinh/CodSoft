@@ -649,18 +649,19 @@ span {
     color: white;
 }
 
-@media (max-width:1285px) {
+@media (max-width: 1285px) {
     html {
         font-size: 55%;
     }
+
     .skill-container {
         padding-bottom: 7rem;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
     }
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
     }
@@ -692,23 +693,22 @@ span {
     }
 
     .project .wrapper {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: 1fr;
     }
-    
+
     .contact form {
         flex-direction: column;
     }
-    
+
     .footer {
         padding: 2rem 3%;
     }
 }
 
-@media (max-width:895px) {
+@media (max-width: 895px) {
     #menu-icon {
         display: block;
     }
-
 
     .navbar {
         position: absolute;
@@ -728,7 +728,7 @@ span {
         display: block;
     }
 
-     .navbar a {
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
@@ -754,7 +754,7 @@ span {
         margin: 0 auto;
     }
 
-    .home-img img{
+    .home-img img {
         width: 56vw;
     }
 
@@ -763,9 +763,139 @@ span {
     }
 
     .skill-container {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-
-
 }
 
+@media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .header {
+        padding: 2.5rem 8%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+
+    .Home {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .info h1 {
+        font-size: 5rem;
+    }
+
+    .info h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-img img {
+        width: 40vw;
+    }
+
+    .info p {
+        font-size: 1.3rem;
+        min-width: auto;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 40%;
+    }
+
+    .header {
+        padding: 2rem 5%;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .Home {
+        gap: 3rem;
+    }
+
+    .info h1 {
+        font-size: 4rem;
+    }
+
+    .info h3 {
+        font-size: 2rem;
+    }
+
+    .home-img img {
+        width: 50vw;
+    }
+
+    .info p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Additional mobile-specific adjustments */
+@media (max-width: 576px) {
+ 
+
+    .Home {
+        padding: 0 2rem;
+    }
+
+    .info p {
+        padding: 0 1rem;
+    }
+
+    .btn-group{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact{
+        margin-top: 75px;
+    }
+
+    .footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer ul li {
+        padding: 0.5rem 1rem;
+    }
+}
